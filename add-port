@@ -1,0 +1,15 @@
+$ ./boot.sh
+$ ./configure CFLAGS="-g -O1"
+$ make
+$ sudo make install
+
+sudo ovs-vsctl add-port br0 port1port1port1port1
+(I used the following script for adding a port:
+https://gist.github.com/djoreilly/1cf74c684cf03da06ea6) 
+
+Otherwise, adding a long bridge is also sufficient for getting the error.
+sudo ovs-vsctl add-br bridge1bridge1bridge1
+
+This produce the error as in the log. 
+https://github.com/spchal/ovs-fuzz/blob/master/ovs-vswitchd.log
+
