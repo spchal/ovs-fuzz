@@ -1,3 +1,4 @@
+Version openvswitch-2.5.0
 $ ./boot.sh
 $ ./configure CFLAGS="-g -O1"
 $ make
